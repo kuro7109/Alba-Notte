@@ -282,6 +282,15 @@ section[id] { scroll-margin-top: var(--nav-h); }
   letter-spacing: .6px;
   color: var(--ink);
 }
+.pcal {
+  margin: 8px 0 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .6px;
+  color: #6B5E54;
+}
+.menu-item .pcal { margin-top: 4px; font-size: 13px; }
 .pimg-box { flex: 1 1 200px; display: flex; justify-content: center; }
 .pimg {
   height: 210px;

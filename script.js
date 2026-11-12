@@ -20,11 +20,11 @@
     notte: {
       note: 'Served once the lights dim, into the evening.',
       items: [
-        { name: 'Classic Laccha Croissant', price: '€9.50', img: 'assets/night1.webp',
+        { name: 'Golden Raat Rum Lassi', price: '€9.50', img: 'assets/night1.webp', cal: '≈ 310 kcal',
           desc: 'A night-time reinterpretation of the classic Indian mango lassi, blended with Maltese white rum and lightly spiced with cardamom and saffron.' },
-        { name: 'Tandoori Paneer & Spiced Tomato Bruschetta', price: '€9.00', img: 'assets/night0.webp',
+        { name: 'Malta Sunset Rum Punch', price: '€9.00', img: 'assets/night0.webp', cal: '≈ 260 kcal',
           desc: 'Inspired by Valletta’s golden sunsets, this vibrant rum punch blends fresh Malta orange juice with cranberry and pineapple, balanced by lime and local dark rum.' },
-        { name: 'Bhetki “Malai Bianco” Pasta', price: '€8.50', img: 'assets/night2.webp',
+        { name: 'Monolit Coconut Rum Spritz', price: '€8.50', img: 'assets/night2.webp', cal: '≈ 240 kcal',
           desc: 'Inspired by warm Mediterranean nights, this refreshing spritz blends Maltese white rum with smooth coconut cream, fresh lime, and soda.' }
       ]
     }
@@ -134,7 +134,7 @@
         <img src="${esc(m.img)}" alt="">
         <div style="flex:1;min-width:0">
           <div class="pline"><h3 class="pname">${esc(m.name)}</h3><span class="dots" aria-hidden="true"></span><span class="price">${esc(m.price)}</span></div>
-          <p>${esc(m.desc)}</p>
+          <p>${esc(m.desc)}</p>${m.cal ? `<p class="pcal">Calories: ${esc(m.cal)}</p>` : ''}
         </div>
       </div>`).join('');
   }
